@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="{%url 'first_bet:index' %}">WinniG_bet <img src="https://img.icons8.com/offices/24/000000/football2--v1.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+            {% if session %}
+        <li class="nav-item active signin-du" >
+
+         <a class="nav-link " href="{%url 'first_bet:mon_pari'  %}"> Mes paris<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active signin-d" >
+        <a class="nav-link" href="#"> <img src="https://img.icons8.com/offices/16/000000/money-bag.png"> {{session_solde}} FCFA<span class="sr-only">(current)</span></a>
+           </li>
+        <li class="nav-item active signin-d" >
+
+         <a class="nav-link " href="{%url 'first_bet:retrait' %}">bet.nOW<span class="sr-only">(current)</span></a>
+      </li>
+         <li class="nav-item active signin-d" >
+
+         <a class="nav-link "  href="{%url 'first_bet:logout' %}">logout<img src="https://img.icons8.com/offices/16/000000/logout-rounded.png"><span class="sr-only">(current)</span></a>
+      </li>
+
+         {% else %}
+      <li class="nav-item active signin">
+
+
+
+
+        <a class="nav-link " href="{%url 'first_bet:login' %}">SE CONNECTER<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active sign-up">
+        <a class="nav-link" href="{%url 'first_bet:creat' %}">S'INSCRIRE<span class="sr-only">(current)</span></a>
+           </li>
+   {% endif%}
+    </ul>
+  </div>
+</nav>

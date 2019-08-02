@@ -1,0 +1,34 @@
+{%extends "base.html" %}
+{% block head_title %}SIGN'IN{%endblock %}
+{% block content %} {% include 'nav.html' %}
+{% load static %}
+{% include 'nav2.html' %}
+   <div class="registration-list-columns-j" id="login">
+       {% if error is null %}
+       <div id="inscrit">  LOGIN   </div>
+        {% elif success %}
+       <div class="alert alert-success">  {{success}} </div>
+     {% else %}
+
+   <div class="alert alert-danger">  {{error}} </div>
+{% endif %}
+
+    <form method="post">{% csrf_token %}
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" name="username" placeholder="Pseudonyme">
+    </div>
+
+
+
+
+    <div class="col">
+      <input type="password" class="form-control" name="password" placeholder="password">
+    </div>
+
+  </div>
+        <button type="submit" class="btn">LOGIN</button>
+</form>
+   </div>
+ {% include 'footer.html' %}
+{% endblock %}

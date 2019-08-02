@@ -1,0 +1,49 @@
+{%extends "base.html" %}
+{% block head_title %}Mes pari{%endblock %}
+{% block content %} {% include 'nav.html' %}
+{% include 'nav2.html' %}
+{% load static %}
+
+my_bet
+<div class="container">
+  <div class="row">
+    <div class="col" style="">
+         <form method="post">{% csrf_token %}
+
+ <div class="radio-group" style="background:#675f6b;border: solid 3px #675f6b;">
+<input type="radio" id="option-one" name="selector">
+     <label for="option-one" style="color:#ccc8ce;">CONGO</label>
+     <input type="radio" id="option-two" name="selector"><label for="option-two" style="color:#ccc8ce;" >
+     NULL
+ </label><input type="radio" id="option-three" name="selector"><label for="option-three"style="color:#ccc8ce;">
+     BENIN</label>
+  </div>
+
+
+      <div class="col">
+
+      <input type="number" class="form-control" name="mise"    placeholder="mise**">
+
+    </div>
+
+      <button type="submit" class="btn" style="margin-bottom:30% "> PARIER</button>
+          </form>
+    </div>
+
+    <div class="col-sm"  style="border-left:1px solid white;margin-top:5px;">
+      <div style="box-shadow: 0 1px 10px black; color:white; text-align:center">Mes Ancien Paris</div>
+    </div>
+
+           </div>
+  </div>
+
+  </div>
+
+{% include 'footer.html' %}
+{% endblock %}
+
+
+<div >
+        <div class="shadow rounded" style="margin:5px 0; background:black;">
+            <a class="nav-link" href="#" style="color:white;">arsenal <div style="float:right; color:green;">2.05</div></a></div>
+        </div>

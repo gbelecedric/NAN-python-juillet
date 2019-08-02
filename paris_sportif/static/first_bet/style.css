@@ -1,0 +1,239 @@
+/*generale*/
+body{
+  background:#171c2c;
+  "box-shadow: 0 1px 10px #0D0F18;"
+
+}
+/*nav*/
+.navbar {
+background:#000a12;
+color:white;
+
+}
+nav a {
+color:white;
+}
+nav a:hover {
+color:white;
+}
+nav li a {
+color:white;
+text-align:center;
+}
+.signin{
+   padding: 0px 5px 0px 2px;
+  border: 1px solid yellow;
+    font: 13px arial, sans-serif;
+}
+.signin-d{
+   padding: 0px 5px 0px 2px;
+  border-right: 1px solid yellow;
+
+    font: 13px arial, sans-serif;
+}
+.signin-du{
+   padding: 0px 5px 0px 2px;
+  border-right: 1px solid yellow;
+   border-left: 1px solid yellow;
+    font: 13px arial, sans-serif;
+}
+
+
+.mr-auto{
+  padding-left: 70%;
+}
+.navbar-collapse li{
+  margin-left: -5px;
+  float:right;
+}
+.sign-up{
+padding: 0px 5px 0px 2px;
+   background-color:yellow;
+   border: 1px solid yellow;
+     font: 13px arial, sans-serif;
+}
+ .sign-up:hover {
+  background-color:#1faa00;
+  font: 13px arial, sans-serif;
+
+}
+nav li a:hover {
+color:white;
+font: 13px arial, sans-serif;
+}
+/*recherche*/
+.search-box{
+position:absolute;/*recherche*/
+top:10%;
+left:80%;
+transform:translate(-50%,-50%);
+background:#000000;
+height:40px;
+padding:10px;
+border-radius:40px;
+}
+.search-btn{
+color:#e84118;
+float:right;
+width:40px;
+height:40px;
+border-radius:50%;
+background:#2f3640;
+display:flex;
+justify-content:center;
+align-items:center;
+transition: 0.4s;
+}
+.search-box:hover > .search-txt{
+width:240px;
+padding:0 6px;
+background:none;
+}
+.search-txt{
+border:none;
+background:none;
+outline:none;
+float:left;
+padding:0;
+color:white;
+font-size:16px;
+transition:0.4s;
+line-height:10px;
+width:0px;
+}*/
+.row div .trait{
+border-right:border: 5px solid red;
+border-color:white;
+}
+#deuxieme{
+background:#263238;
+padding: 0 50px;
+border-bottom:2px solid yellow;
+}
+#troisieme{
+border-right:2px solid #6d6d6d;
+}
+footer{
+padding: 56px 0;
+background:#000a12;
+margin:0px -95px;
+
+}
+#lien-2{
+float:right;
+margin-top:-120px;
+margin-right:50%;
+}
+#lien-3{
+float:right;
+margin-top:-120px;
+margin-right:5%;
+color:#fafafa;
+}
+#lien-3 ul li a , #lien-2 ul li a, #lien-1 ul li a{
+color:#fafafa;
+}
+
+
+
+.col .container-fluid {
+
+color:#fafafa;
+margin-top:2%;
+background:#62727b;
+}
+.col .container-fluid:hover {
+background:#37474f;
+}
+.shadow {
+box-shadow: 0 1px 10px #0D0F18;
+
+}
+h6{
+
+margin:1%  35%;
+color:white;
+}
+/*form sign-up*/
+.registration-list-columns-j{
+    text-align:center;
+    margin: 2% 10% 8% 5%;
+    box-shadow: 0 1px 10px #0D0F18;
+
+
+}
+.registration-list-columns-j .row .col {
+    margin: 2%;
+
+}
+.form-control{
+border-spacing: 15px 50px;
+}
+.registration-list-columns-j .row .col input{
+    background:#000a12;
+}
+
+.btn{
+background:#00c853;
+float:right;
+margin-top:2%;
+color:#fafafa;
+}
+.btn : hover{
+background:#5efc82;
+
+}
+.registration-list-columns-j #inscrit{
+color:white;
+}
+#login{
+margin-top:10%;
+}
+
+#solde{
+box-shadow: 0 1px 10px   background: rgba(76, 175, 80, 0.1);
+color:green;
+}
+
+
+
+$bg: #332f35;
+$fg: lighten($bg,20%);
+$borderWidth: 3px;
+
+body {
+  background: $bg;
+  font-family: roboto;
+}
+
+input[type=radio] {
+  position: absolute;
+visibility: hidden;
+display: none;
+}
+
+label {
+  color: #9a929e;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=radio]:checked + label{
+ color: #ccc8ce;
+background: #675f6b;
+}
+
+label + input[type=radio] + label {
+  border-left: solid 3px #675f6b;
+}
+.radio-group {
+  border: solid 3px #675f6b;;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');

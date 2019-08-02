@@ -1,0 +1,69 @@
+{%extends "base.html" %}
+{% block head_title %}register{%endblock %}
+{% block content %} {% include 'nav.html' %}
+{% load static %}
+{% include 'nav2.html' %}
+ {% if access is not null%}
+
+
+
+{% endif %}
+   <div class="registration-list-columns-j">
+       {% if error %}
+          <div class="alert alert-danger">  {{ error }} </div>
+        {% elif  access%}
+          <div class="alert alert-danger">  {{ access }} </div>
+
+     {% else %}
+       <div id="inscrit"> INSCRIPTION </div>
+
+{% endif %}
+
+    <form method="post">{% csrf_token %}
+  <div class="row">
+    <div class="col">
+
+      <input type="text" class="form-control" name="username" placeholder="usename">
+
+    </div>
+
+
+    <div class="col">
+
+      <input type="email" class="form-control" name="email" placeholder="Email">
+    </div>
+
+  </div>
+        <div class="row">
+    <div class="col">
+
+     <input type="password" class="form-control" name="password" placeholder="password">
+
+    </div>
+
+    <div class="col">
+  <input type="password" class="form-control" name="password_confirme" placeholder="confimer le mot de passe">
+
+    </div>
+
+  </div>
+          <div class="row">
+    <div class="col">
+
+      <input type="number" class="form-control" name="solde"   disabled="disabled" value="1000">
+
+    </div>
+
+    <div class="col">
+ <div id="solde"> A la creation de votre compte 1000F CFA vous etes offert...</div>
+
+    </div>
+
+  </div>
+
+        <button type="submit" class="btn">S'INSCRIRE</button>
+</form>
+   </div>
+ {% include 'footer.html' %}
+{% endblock %}
+

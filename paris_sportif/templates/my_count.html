@@ -1,0 +1,26 @@
+{%extends "base.html" %}
+{% block head_title %}account{%endblock %}
+{% block content %} {% include 'nav.html' %}
+
+{% load static %}
+{% include 'nav2.html' %}
+
+<div class="container-fluid">
+  <div class="row">
+      {% for m in match %}
+    <div class="col-sm" >
+       <div >
+        <div class="shadow rounded" style="margin-bottom:150% ; background:black;"> <a class="nav-link active" href="#" style="color:white;">{{ m.one }} <div style="float:right; color:#ef6c00;">{{ m.coteone }}</div></a>
+            <a class="nav-link" href="#" style="color:white;">{{ m.two}}<div style="float:right; color:#ef6c00;">{{ m.cotetwo }}</div></a></div></div>
+    </div>
+   {% endfor %}
+    <div class="col-sm"  style="border-left:1px solid black;margin-top:5px;">
+      <div style="box-shadow: 0 1px 10px #0D0F18;"></div>
+    </div>
+  </div>
+</div>
+
+
+
+{% include 'footer.html' %}
+{% endblock %}
